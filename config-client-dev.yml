@@ -1,34 +1,3 @@
-spring:
-  profiles:
-    active: git
-  cloud:
-    config:
-      server:
-
-        git:
-          uri: https://github.com/111haodh/hello
-          search-paths: config-client-dex.yml
-          username: 111haodh  #登录名
-          password: 040311dh  #密码
-          default-label: main
-         
-  application:
-    name: config-server
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 server:
-  port: 8768
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:7421/eureka/
-    instance:
-      hostname: localhost
-management: # 暴露触发消息总线的地址
-  endpoints:
-    web:
-      exposure:
-        include: "bus-refresh"
+  port: 423
+foo: 段皓
