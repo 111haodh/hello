@@ -1,0 +1,6 @@
+@Value("${foo}")
+ String foo;
+ @RequestMapping(value = "/foo")
+ public String hi(){
+  return foo;
+}
